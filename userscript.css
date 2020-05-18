@@ -1,17 +1,27 @@
-@media (min-width: 1000px){
-      .columns-area>div{
-        width: 25%;
-        max-width: 25%;
-}
+/*
+To add your other instances, you can simply add more domain() like so:
+@-moz-document domain("https://counter.social") {
+Note: Make sure that every domain() is comma separated and that there is no
+comma after the last domain.
+*/
 
-.wide .drawer,
+@-moz-document domain(counter.social)
+{
+ 	@  media (min-width: 1000px)
+  {
+    .columns-area>div{
+        width: 25%;
+    max-width: 25%;
+  }
+
+  .wide .drawer,
 .wide .column,
 .columns-area>div>.column,
 .columns-area>div>.mastodon-column-container>.column,
 .wide .columns-area:not(.columns-area--mobile) .column
-{
-	max-width: 100%;
-	flex: auto;
+  {
+    max-width: 100%;
+    flex: auto;
+  }
 }
-
 }
