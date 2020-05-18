@@ -1,0 +1,17 @@
+@media (min-width: 1000px){
+      .columns-area>div{
+        width: 25%;
+        max-width: 25%;
+}
+
+.wide .drawer,
+.wide .column,
+.columns-area>div>.column,
+.columns-area>div>.mastodon-column-container>.column,
+.wide .columns-area:not(.columns-area--mobile) .column
+{
+	max-width: 100%;
+	flex: auto;
+}
+
+}
